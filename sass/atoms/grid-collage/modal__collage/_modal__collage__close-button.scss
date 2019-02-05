@@ -1,0 +1,14 @@
+//COMPASS [ line 9,  ]
+.modal__collage__close-button{
+  position: absolute;
+  z-index: 10000;
+  right: 0;
+  color: #da2828;
+  font-size:24px;
+  opacity: .9;
+  @include single-text-shadow(2px 0px 1px $black);
+  margin-right: 12px;
+  @media(min-width: map-get($breakpoints,large)){
+    font-size:30px;
+  }
+}

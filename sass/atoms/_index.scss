@@ -1,0 +1,21 @@
+// Atoms
+//
+// If atoms are the basic building blocks of matter, then the atoms of
+// our interfaces serve as the foundational building blocks that
+// comprise all our user interfaces. Therefore these atoms would include
+// basic HTML tags like form labels, inputs, buttons, and other elements
+// that can’t be broken down any further without ceasing to be functional.
+//
+// @source - http://atomicdesign.bradfrost.com/chapter-2/
+
+@import "./header/index.scss";
+@import "./grid-collage/index.scss";
+@import "./touchOfNature/index.scss";
+@import "texture/index.scss";
+@import "./pieces/index.scss";
+@import "footer/index.scss";
+//GENERAL
+@import "./sublines-verse.scss";
+@import "dorotea__verse.scss";
+@import "dorotea__content.scss";
+@import "dorotea_video.scss";

@@ -1,0 +1,29 @@
+
+.footer-title{
+  text-align: center;
+  @include fonty( 24px, $default-ff, $color-text, $regular, 5px, uppercase);
+  @include fonty(6.5vw, $default-ff, $color-text, $regular, .3vw, uppercase);
+  @media(min-width: map-get($breakpoints,small)){
+    font-size: 24px;
+   }
+   @media(min-width: map-get($breakpoints,mmd)){
+     font-size: 32px;
+    }
+   @media(min-width: map-get($breakpoints,md)){
+     color:#e4e4e4;
+     text-shadow: 0 0 .5px black;
+     font-size: 24px;
+    }
+   @media(min-width: map-get($breakpoints,large)){
+     font-size: 28px;
+     letter-spacing: 3px;
+    }
+  @media(min-width: map-get($breakpoints,xlarge)){
+    font-size: 32px;
+    letter-spacing: 3px;
+   }
+   @media(min-width: 1875px){//static layout
+     font-size: 36px;
+     letter-spacing: 6px;
+   }
+}

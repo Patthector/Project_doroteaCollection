@@ -1,0 +1,49 @@
+
+.carolina-thought{
+  font-size:9px;
+  margin-left: 40%;
+  margin-top: 12px;
+  line-height: 12px;
+  text-align: right;
+  &~span{
+    font-size:8px;
+    display: inline-block;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: right;
+    font-weight: $bold;
+  }
+
+  @media(min-width: map-get($breakpoints, mmd)){
+    font-size:12px;
+    margin-left: 20%;
+    line-height: 18px;
+    &~span{
+      font-size: 11px;
+    }
+  }
+  @media(min-width: map-get($breakpoints, md)){
+    font-size:13px;
+    margin-left: 40%;
+    line-height: 20px;
+    &~span{
+      font-size: 13px;
+    }
+  }
+  @media(min-width: map-get($breakpoints, large)){
+    font-size:14px;
+    margin-left: 20%;
+    line-height: 20px;
+    &~span{
+      font-size: 14px;
+    }
+  }
+  @media(min-width:1875px){
+    font-size:16px;
+    margin-left: 40%;
+    line-height: 24px;
+    &~span{
+      font-size: 16px;
+    }
+  }
+}

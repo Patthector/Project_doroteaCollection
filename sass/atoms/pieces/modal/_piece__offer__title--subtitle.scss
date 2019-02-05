@@ -1,0 +1,33 @@
+
+.piece__offer__title--subtitle{
+  position: relative;
+  font-size: 14px;
+  .first{
+    font-size:28px;
+    display: inline-block;
+  }
+  @media(min-width:map-get($breakpoints,small)){
+    font-size: 14px;
+    .first{
+      font-size:28px;
+    }
+  }
+  @media(min-width:map-get($breakpoints,mmd)){
+    font-size: 14px;
+    .first{
+      font-size:30px;
+    }
+  }
+  @media(min-width:map-get($breakpoints,md)){
+    font-size: 14px;
+    .first{
+      font-size:30px;
+    }
+  }
+  @media(min-width:map-get($breakpoints,large)){
+    font-size: 18px;
+    .first{
+      font-size:36px;
+    }
+  }
+}

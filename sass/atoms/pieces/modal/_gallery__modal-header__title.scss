@@ -1,0 +1,18 @@
+
+.gallery__modal-header__title{
+  font-size: 20px;
+  position: relative;
+  .first{
+    display: inline-block;
+    font-size: 36px;
+    margin-left: -4px;
+  }
+  @media(min-width:map-get($breakpoints,small)){
+    font-size: 24px;
+    .first{
+      display: inline-block;
+      font-size: 48px;
+      margin-left: -6px;
+    }
+  }
+}

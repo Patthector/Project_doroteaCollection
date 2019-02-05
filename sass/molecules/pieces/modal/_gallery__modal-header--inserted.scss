@@ -1,0 +1,8 @@
+
+.gallery__modal-header--inserted{
+  display: none;
+  @media(min-width: map-get($breakpoints,mmd)){
+    display: block;
+    position: relative;
+  }
+}

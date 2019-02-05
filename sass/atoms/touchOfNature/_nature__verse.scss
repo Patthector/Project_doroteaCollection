@@ -1,0 +1,9 @@
+
+.nature__verse-container{
+  @media(min-width:map-get($breakpoints,large)){
+    margin: 24px 0 ;
+  }
+}
+.dorotea__verse--color{
+  color:white !important;
+}

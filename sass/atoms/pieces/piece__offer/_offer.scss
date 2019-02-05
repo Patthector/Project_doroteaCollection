@@ -1,0 +1,30 @@
+.offer{
+  font-size:5vw;
+  font-family: $default-ff;
+  text-transform: uppercase;
+  @media(min-width:320px){
+    font-size:3.5vw;
+  }
+  @media(min-width:map-get($breakpoints,small)){
+    font-size:2.6vw;
+  }
+  @media(min-width:map-get($breakpoints,mmd)){
+    font-size: 2.4vw;;
+    letter-spacing: .2px;
+  }
+  @media(min-width:map-get($breakpoints,md)){
+    font-size:1.8vw;
+  }
+  @media(min-width:map-get($breakpoints,large)){
+    font-size:1.5vw;
+  }
+  @media(min-width:map-get($breakpoints,xlarge)){
+    font-size:16px;
+  }
+  @media(min-width:1875px){
+    font-size:24px;
+  }
+  .offer--pink{
+    color:$color-primary;
+  }
+}

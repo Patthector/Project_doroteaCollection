@@ -1,0 +1,14 @@
+
+.gallery__modal-header{
+  position: relative;
+  box-shadow: 0px 2px 2px #f4f4f4;
+  .piece__title{
+    margin-bottom: 0;
+    .first{
+      display: inline-block;
+    }
+  }
+  @media(min-width: map-get($breakpoints,mmd)){
+    display: none; 
+  }
+}

@@ -1,0 +1,59 @@
+
+.about-author-content{
+  //MOBILE less than 480px
+  width: 80%;
+    @include dorotea__content(
+            11px,
+            .3px,
+            17px);
+            //TABLET SCREEN or BIG MOBILES
+    @media(min-width:map-get($breakpoints,small)){
+      @include dorotea__content(
+              12px,
+              .5px,
+              20px);
+    }
+  //LAPTOPS or BIG TABLET
+    @media(min-width:map-get($breakpoints,mmd)){
+      @include dorotea__content(
+              2vw,
+              .1vw,
+              3.6vw);
+    }
+  //BIG LAPTOPS
+    @media(min-width:map-get($breakpoints,md)){
+      @include dorotea__content(
+              12px,
+              1px,
+              18px);
+              width: 90%;
+              color:white;
+    }
+  //DESKTOPS
+    @media(min-width:map-get($breakpoints,large)){
+      @include dorotea__content(
+              13px,
+              1px,
+              20px);
+              width: 90%;
+              color:white;
+
+    }
+    //BIG DESKTOPS
+      @media(min-width:map-get($breakpoints,xlarge)){
+        @include dorotea__content(
+                14px,
+                1px,
+                24px);
+                width: 90%;
+                color:white;
+      }
+      @media(min-width: 1875px){//static layout
+        @include dorotea__content(
+                16px,
+                1px,
+                28px);
+                width: 90%;
+                color:white;
+      }
+}

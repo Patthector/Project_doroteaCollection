@@ -1,0 +1,21 @@
+//COMPASS [ line 7, ]
+.amazon-affiliate-program{
+  padding-left: 0;
+  padding-right: 0;
+  background-color: white;
+  border: 1px #ffb3a133 solid;
+  @include single-box-shadow(0, 0, 4px, 0, #ebebeb);
+  margin-bottom: 24px;
+  @media(min-width: map-get($breakpoints,small)){
+    margin-bottom: 36px;
+  }
+  @media(min-width: map-get($breakpoints,mmd)){
+    margin-bottom: 48px;
+  }
+  @media(min-width: map-get($breakpoints,md)){
+    margin-bottom: 60px;
+  }
+  @media(min-width: map-get($breakpoints,large)){
+    margin-bottom: 72px;
+  }
+}

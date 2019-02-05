@@ -1,0 +1,15 @@
+
+.footer-bottom{
+  width: 100%;
+  margin: auto;
+  ul{
+    justify-content: space-evenly;
+  }
+  @media(min-width: map-get($breakpoints, small)){
+    width: 80%;
+  }
+  @media(min-width: map-get($breakpoints, md)){
+    width: 50%;
+    justify-content: space-around;
+  }
+}

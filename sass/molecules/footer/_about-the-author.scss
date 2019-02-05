@@ -1,0 +1,10 @@
+
+.about-the-author{
+  width: 100%;
+
+  @media(min-width: map-get($breakpoints,md)){
+    width: 33%;
+    order: 1;
+    z-index:1;
+  }
+}

@@ -1,0 +1,49 @@
+
+.listing-pieces-title{
+  width: 100%;
+  text-align: center;
+  margin-top: 6px;
+  @include fonty(36px, $cursive-ff, $color-primary, $regular, 0, none, normal, 20px);
+  .first{
+    display: inline-block;
+    width: 100%;
+    @include fonty(24px, $default-ff, black, $regular, 0, none, italic);
+  }
+  @media(min-width: map-get($breakpoints,mmd)){
+    font-size:48px;
+    line-height: 24px;
+    .first{
+      font-size:28px;
+    }
+  }
+  @media(min-width: map-get($breakpoints,md)){
+    font-size:36px;
+    line-height: 20px;
+    .first{
+      color:#e4e4e4;
+      font-size:24px;
+    }
+  }
+  @media(min-width: map-get($breakpoints,large)){
+    font-size:40px;
+    line-height: 22px;
+    .first{
+      color:#e4e4e4;
+      font-size:26px;
+    }
+  }
+  @media(min-width: map-get($breakpoints,xlarge)){
+    font-size:48px;
+    line-height: 24px;
+    .first{
+      font-size:28px;
+    }
+  }
+  @media(min-width: 1875px){
+    font-size:48px;
+    line-height: 24px;
+    .first{
+      font-size:28px;
+    }
+  }
+}

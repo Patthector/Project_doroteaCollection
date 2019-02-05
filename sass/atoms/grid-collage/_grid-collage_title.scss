@@ -1,0 +1,75 @@
+
+.grid-collage_title{
+  margin:0;
+  padding: 0;
+  text-align: center;
+
+  .first{
+    @include fonty(6.5vw, $default-ff, $color-text, $regular, .3vw, uppercase);
+  }
+  .middle{
+    @include fonty(11vw, $default-ff, $color-text, $regular, 0, uppercase, italic);
+  }
+  .last{
+    @include fonty(11vw, $cursive-ff, $color-primary);
+  }
+  @media(min-width: map-get($breakpoints,mmd)){
+    .first{
+      font-size: 6.3vw;
+      letter-spacing: .5vw;
+    }
+    .middle{
+      font-size: 11vw;
+    }
+    .last{
+      font-size: 11vw;
+    }
+  }
+  @media(min-width: map-get($breakpoints,md)){
+    .first{
+      letter-spacing: .8vw;
+    }
+    .middle{
+      font-size: 11vw;
+    }
+    .last{
+      font-size: 10.2vw;
+    }
+  }
+  @media(min-width: map-get($breakpoints,large)){
+    .first{
+      font-size: 5vw;
+      letter-spacing: .8vw;
+    }
+    .middle{
+      font-size: 8vw;
+    }
+    .last{
+      font-size: 8vw;
+    }
+  }
+  @media(min-width: map-get($breakpoints,xlarge)){
+    .first{
+      font-size: 4.4vw;
+      letter-spacing: .8vw;
+    }
+    .middle{
+      font-size: 8vw;
+    }
+    .last{
+      font-size: 7.5vw;
+    }
+  }
+  @media(min-width: 1875px){//static layout
+    .first{
+      font-size: 84px;
+      letter-spacing: 10px;
+    }
+    .middle{
+      font-size: 132px;
+    }
+    .last{
+      font-size:132px;
+    }
+  }
+}

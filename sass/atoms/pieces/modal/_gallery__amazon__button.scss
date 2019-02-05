@@ -1,0 +1,69 @@
+//COMPASS [ line 27, line 28, line 29, line 52]
+
+.gallery__fishing{
+  text-align: center;
+  p{
+    font-family: $cursive-ff;
+    font-size:9.5vw;
+    color:black;
+    text-align: center;
+    margin-bottom: 0;
+    @media(min-width:map-get($breakpoints,small)){
+      font-size: 7vw;
+    }
+    @media(min-width:map-get($breakpoints,mmd)){
+      font-size: 6vw;
+    }
+    @media(min-width:map-get($breakpoints,md)){
+      font-size: 3.8vw;
+    }
+    @media(min-width:map-get($breakpoints,large)){
+      font-size: 42px;
+    }
+    @media(min-width:1875px){
+      font-size: 48px;
+    }
+  }
+}
+.amazon__button{
+  background-color: #ffb3a1; // Old browsers
+  @include filter-gradient(#ffb3a1, #de6869, horizontal); // IE6-9 fallback on horizontal gradient
+  @include background-image(linear-gradient(left bottom, #ffb3a1 11%,#de6869 30%,#ffb3a1 67%,#de6869 95%));
+  @include fonty(6vw, $default-ff, white, $black, 1vw, uppercase){
+    border-radius: 25px;
+  };
+
+  @media(min-width:map-get($breakpoints,small)){
+    font-size: 4.5vw;
+    letter-spacing: .5vw;
+  }
+  @media(min-width:map-get($breakpoints,mmd)){
+    font-size: 3vw;
+    letter-spacing: .5vw;
+  }
+  @media(min-width:map-get($breakpoints,md)){
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+  @media(min-width:map-get($breakpoints,large)){
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+}
+i{
+  display: block;
+  @include fonty(3vw, $default-ff, $color-text, $regular, .1vw, none, italic);
+
+  @media(min-width:map-get($breakpoints,small)){
+    font-size: 2.2vw;
+  }
+  @media(min-width:map-get($breakpoints,mmd)){
+    font-size: 1.5vw;
+  }
+  @media(min-width:map-get($breakpoints,md)){
+    font-size: 11px;
+  }
+  @media(min-width:map-get($breakpoints,large)){
+    font-size: 12px;
+  }
+}

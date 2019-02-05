@@ -1,0 +1,218 @@
+// Mixins
+
+// Reset List
+//
+// Resets default list styling.
+//
+// @usage - `@include reset-list`
+//
+// Styleguide 10.1
+
+@mixin reset-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// Hovers
+//
+// Create pseduo-classes for `:hover`, `:active`, and `:focus`.
+//
+// @usage - `@include hover`
+//
+// Styleguide 10.3
+
+@mixin hover {
+  &:hover,
+  &:active,
+  &:focus { @content; }
+}
+
+// Feature Detection
+//
+// $feature - Feature-specific class, i.e. `cssgradients`.
+// @usage - `@include supported($feature)`
+// @usage - `@include not-supported($feature)`
+
+@mixin supported($feature) {
+  .#{$feature} & {
+    @content;
+  }
+}
+
+@mixin not-supported($feature) {
+  .no-js &,
+  .no-#{$feature} & {
+    @content;
+  }
+}
+
+// Media Queries
+//
+// Allows you to use inline media queries. Includes options for `$fix-mqs`.
+//
+// $breakpoint - Desired breakpoint. Can be variable or unit.
+// $query - Defaults to `min-width`.
+// $type - Defaults to `screen`.
+
+@mixin mq($breakpoint, $query: 'min-width', $type: 'screen') {
+  @if $fix-mqs {
+    @if $fix-mqs >= $breakpoint { @content; }
+  } @else {
+    @media #{$type} and (#{$query}: #{$breakpoint}) { @content; }
+  }
+}
+
+// Clearfix
+//
+// Nicolas Gallagher's micro clearfix hack
+//
+// @source - http://nicolasgallagher.com/micro-clearfix-hack/
+
+@mixin clearfix {
+  *zoom: 1;
+
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+
+  &:after { clear: both; }
+}
+
+// Hide Text
+//
+// @usage - `@include hide-text`
+
+@mixin hide-text {
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+}
+
+// Hidden
+//
+// Hide from both screenreaders and browsers
+//
+// @usage - `@include hidden`
+
+@mixin hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+// Visually Hidden
+//
+// Hide only visually, but have it available for screenreaders
+//
+// @usage - `@include visuallyhidden`
+
+@mixin visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+
+  // Extends the .visuallyhidden class to allow the element to be focusable
+  // when navigated to via the keyboard: h5bp.com/p
+
+  &.focusable {
+    &:active,
+    &:focus {
+      clip: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: static;
+      width: auto;
+    }
+  }
+}
+
+// Invisible
+//
+// Hide visually and from screenreaders, but maintain layout
+//
+// @usage - `@include invisible`
+
+@mixin invisible { visibility: hidden; }
+
+//******************************************
+//By PATTOR
+
+//verse--atom styles
+@mixin dorotea__verse($verse__font-size:null,
+                      $verse__letter-spacing:null,
+                      $verse__line-height:null){
+  font-family: $default-ff;
+  font-style: italic;
+  color:$color-text;
+  font-size: $verse__font-size;
+  letter-spacing: $verse__letter-spacing;
+  line-height: $verse__line-height;
+  @content;
+}
+
+
+//content--atom styles
+@mixin dorotea__content($content__font-size:null,
+               $content__letter-spacing:null,
+               $content__line-height:null,
+               $content__first-letter--font-family:null,
+               $content__first-letter--font-size:null,
+               $content__first-letter--letter-spacing:null){
+  font-family: $default-ff;
+  color:$color-text-weak;
+  font-size: $content__font-size;
+  letter-spacing: $content__letter-spacing;
+  line-height: $content__line-height;
+  &::first-letter{
+    font-family: $content__first-letter--font-family;
+    font-size: $content__first-letter--font-size;
+    letter-spacing: $content__first-letter--letter-spacing;
+  }
+  @content;
+}
+
+//FOR flexy components
+@mixin flexy($flexy__direction:row,
+              $flexy__wrap:wrap,
+              $flexy__justify:flex-start,
+              $flexy__align:flex-start,
+              $flexy__flex:null){
+  display: flex;
+  flex-direction: $flexy__direction;
+  flex-wrap: $flexy__wrap;
+  justify-content: $flexy__justify;
+  align-items: $flexy__align;
+  flex: $flexy__flex;
+  @content;
+}
+
+//FONTY FONT
+
+@mixin fonty($fonty__size,
+             $fonty__family : $default-ff,
+             $fonty__color : $color-secondary,
+             $fonty__weight : $regular,
+             $fonty__letter-spacing : null,
+             $fonty__transform : none,
+             $fonty__style : normal,
+             $fonty__line-height : null) {
+
+  font-family: $fonty__family;
+  font-size: $fonty__size;
+  color: $fonty__color;
+  font-weight: $fonty__weight;
+  letter-spacing: $fonty__letter-spacing;
+  text-transform: $fonty__transform;
+  font-style: $fonty__style;
+  line-height: $fonty__line-height;
+
+  @content;
+}

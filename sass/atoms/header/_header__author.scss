@@ -1,0 +1,21 @@
+
+.header__author{
+  color:$color-text;
+  font-size: 1.8vw;
+  font-family: $default-ff;
+  .first{
+    font-style: italic;
+  }
+  .last{
+    color:$color-text;
+    text-transform: uppercase;
+    font-weight: $bold;
+  }
+  @media(min-width: map-get($breakpoints,md)){
+    font-size: 16px;
+  }
+  @media(min-width: map-get($breakpoints,large)){
+    font-size: 18px;
+  }
+
+}

@@ -1,0 +1,15 @@
+
+.gallery__list-pieces{
+  flex: 1 1 100%;
+  list-style: none;
+  padding: 0;
+  @media(min-width:320px){
+    flex:1 1 50%;
+  }
+  @media(min-width:map-get($breakpoints,md)){
+    flex:1 1 33%;
+  }
+  @media(min-width:map-get($breakpoints,xlarge)){
+    flex:1 1 25%;
+  }
+}

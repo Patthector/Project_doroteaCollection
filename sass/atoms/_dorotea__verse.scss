@@ -1,0 +1,48 @@
+
+.dorotea__verse{
+  //MOBILE less than 480px
+  @include dorotea__verse(10px, .3px, 16px);
+  margin-bottom: 0;
+  &--grid{
+    padding: 0 15%;
+  }
+  //TABLET SCREEN or BIG MOBILES
+    @media(min-width:map-get($breakpoints,small)){
+        @include dorotea__verse(2vw, .15vw, 3vw);
+    }
+  //LAPTOPS or BIG TABLET
+    @media(min-width:map-get($breakpoints,mmd)){
+      @include dorotea__verse(
+              1.8vw,
+              .1vw,
+              3vw);
+    }
+  //BIG LAPTOPS
+    @media(min-width:map-get($breakpoints,md)){
+      @include dorotea__verse(
+              1.4vw,
+              .1vw,
+              2.4vw);
+    }
+  //DESKTOPS
+    @media(min-width:map-get($breakpoints,large)){//1248px
+      @include dorotea__content(
+              16px,
+              1px,
+              32px);
+    }
+    //BIG DESKTOPS
+      @media(min-width:map-get($breakpoints,xlarge)){//1500px
+        @include dorotea__content(
+                16px,
+                1px,
+                32px);
+      }
+      //STATIC LAYOUT
+      @media(min-width: 1875px){//1875px
+        @include dorotea__content(
+                18px,
+                1px,
+                40px);
+      }
+}

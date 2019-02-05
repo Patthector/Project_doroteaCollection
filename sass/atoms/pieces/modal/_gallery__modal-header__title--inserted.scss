@@ -1,0 +1,32 @@
+
+.gallery__modal-header__title--inserted{
+  position: relative;
+  @media(min-width:map-get($breakpoints,mmd)){
+    margin-top:24px;
+    font-size: 28px;
+    .first{
+      display: inline-block;
+      font-size:48px;
+      margin-left: 0;
+    }
+  }
+  @media(min-width:map-get($breakpoints,md)){
+    margin-top:24px;
+    font-size: 28px;
+    .first{
+      display: inline-block;
+      font-size:48px;
+      margin-left: 0;
+    }
+  }
+  @media(min-width:map-get($breakpoints,large)){
+    margin-top:24px;
+    font-size: 28px;
+    letter-spacing: 0;
+    .first{
+      display: inline-block;
+      font-size:48px;
+      margin-left: 0;
+    }
+  }
+}

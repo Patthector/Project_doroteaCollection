@@ -1,0 +1,15 @@
+
+.subline-verse{
+  width: 24px;
+  background: $color-primary;
+  height: 1px;
+  border:0;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  @media(min-width:map-get($breakpoints,mmd)){
+    width: 48px;
+  }
+  @media(min-width:map-get($breakpoints,large)){
+    width: 72px;
+  }
+}

@@ -1,0 +1,66 @@
+//COMPASS [ line-42,  ]
+.gallery__modal-body{
+  //swifth the design of modal in 720 for 2 columns
+  padding: 12px;
+  @media(min-width: map-get($breakpoints,mmd)){//720px
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap:nowrap;
+    flex: 1 auto;
+
+    .gallery__carousel{
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .gallery__carousel__offer{
+      width: 50%;
+    }
+    .gallery__modal-body__content--container{
+      width: 40%;
+      padding: 6px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+    .gallery__modal-body__content--container__offer{
+      width: 50%;
+    }
+  }
+
+  .gallery__carousel{
+    padding-bottom: 24px;
+  }
+  .gallery__carousel-indicators{
+    top:98%;
+    .indicator{
+      background-color: $color-primary !important;
+      height: 12px;
+      @include border-radius(6px);//COMPASS
+      width: 12px;
+    }
+    li.active{
+      border:3px solid white !important;
+      background-color: black;
+    }
+  }
+  .gallery__carousel-item--caption{
+    padding-top: 24px;
+  }
+  .gallery__carousel-caption{
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 6px 0 0;
+    h5{
+      color:$color-text-weak;
+    }
+  }
+  .pieces16-list{
+    list-style:circle;
+    padding: 12px 16px 0;
+  }
+}

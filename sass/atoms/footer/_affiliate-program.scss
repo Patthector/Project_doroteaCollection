@@ -1,0 +1,49 @@
+
+.affiliate-program{
+  @include fonty( 8px, $default-ff, black, $regular, .3px, uppercase, normal, 14px){
+    padding: 6px;
+    text-align: center;
+    width: 80%;
+    border: 1px solid $color-primary;
+  };
+
+  @media(min-width: map-get($breakpoints,small)){//480px
+    font-size: 12px;
+    line-height: 22px;
+  }
+  @media(min-width: map-get($breakpoints,mmd)){//720px
+    font-size: 11px;
+    line-height: 18px;
+    b{
+      text-transform: uppercase;
+      font-style: normal;
+      font-size: 13px;
+    }
+  }
+  @media(min-width: map-get($breakpoints,md)){//900px
+    width: 60%;
+    font-size: 11px;
+    line-height: 18px;
+    color:white;
+    text-shadow: 0 0 1px black;
+    b{
+      text-transform: uppercase;
+      font-style: normal;
+      font-size: 13px;
+    }
+  }
+  @media(min-width: map-get($breakpoints,large)){//1248px
+      font-size: 13px;
+      line-height: 20px;
+      padding: 12px;
+  }
+  @media(min-width: map-get($breakpoints,xlarge)){//1500px
+      font-size: 14px;
+      line-height: 24px;
+      width: 80%;
+  }
+  @media(min-width: 1875px){//STATIC
+      font-size: 14px;
+      line-height: 24px;
+  }
+}

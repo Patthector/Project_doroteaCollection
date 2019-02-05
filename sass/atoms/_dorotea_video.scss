@@ -1,0 +1,12 @@
+
+.dorotea_video{
+  display: inline-block;
+  width: 100%;
+  background-color: gray;
+  @media(min-width: 320px){
+    width: 80%;
+  }
+  @media(min-width: map-get($breakpoints,mmd)){
+    width: 100%;
+  }
+}

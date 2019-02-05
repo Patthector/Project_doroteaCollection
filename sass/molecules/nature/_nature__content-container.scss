@@ -1,0 +1,10 @@
+
+.nature__content-container{
+  display: block;
+  position: absolute;
+  top:100%;
+  @media(min-width: map-get($breakpoints,small)){
+    position: relative;
+    top:0;
+  }
+}

@@ -1,0 +1,95 @@
+
+//MARGIN BOTTOM FOR END-OF-SECTION
+.end-of-section{
+  margin-bottom: 24px;
+  @media(min-width: map-get($breakpoints,small)){
+    margin-bottom: 36px;
+  }
+  @media(min-width: map-get($breakpoints,mmd)){
+    margin-bottom: 48px;
+  }
+  @media(min-width: map-get($breakpoints,md)){
+    margin-bottom: 60px;
+  }
+  @media(min-width: map-get($breakpoints,large)){
+    margin-bottom: 72px;
+  }
+}
+.end-of-section-footer{
+  margin-bottom: 36px;
+  @media(min-width: map-get($breakpoints,small)){
+    margin-bottom: 36px;
+  }
+  @media(min-width: map-get($breakpoints,mmd)){
+    margin-bottom: 48px;
+  }
+  @media(min-width: map-get($breakpoints,md)){
+    margin-top:12px;
+    margin-bottom: 12px;
+  }
+  @media(min-width: map-get($breakpoints,large)){
+    margin-top:24px;
+    margin-bottom: 24px;
+  }
+}
+.extra-padding-left-lg{
+  @media(min-width: map-get($breakpoints,large)){
+    padding-left: 48px;
+  }
+}
+.extra-padding-mmd-top{
+  @media(min-width: map-get($breakpoints,large)){
+      padding-top: 24px;
+  }
+}
+//NO-GUTTERS-MARGIN
+.no-gutters-padding{
+  padding-left: 0;
+  padding-right: 0;
+}
+.img--modal{
+  max-width: 300px;
+  max-height: 90vh;
+  margin:auto;
+  @media(min-width: map-get($breakpoints,small)){
+    max-width: 400px;
+  }
+  @media(min-width: map-get($breakpoints,large)){
+    max-width: 480px;
+  }
+}
+//PADDING-LEFT-LIST
+.list-left-pad{
+  padding-left:0;
+}
+//FLEX
+.dorotea_d-flex{@include display-flex();}
+.dorotea_flex-direction-row{@include flex-direction(row);}
+.dorotea_flex-direction-col{@include flex-direction(column);}
+.dorotea_flex-wrap{@include flex-wrap(wrap);}
+.dorotea_justify-content-center{@include justify-content(center);}
+.dorotea_align-items-center{@include align-items(center);}
+
+
+//FOOTER
+.flexy-footer-elem{
+  width: 100%;
+  @media(min-width: map-get($breakpoints, md)){
+    width: 100%;
+  }
+}
+//FOOTER-PIECE
+.flexy-footer-elem-piece{
+  width: 100%;
+  text-align: center;
+  @media(min-width: map-get($breakpoints,small)){
+    width: 50%;
+  }
+  @media(min-width: map-get($breakpoints,md)){
+    width: 100%;
+  }
+}
+//IMG-BACKGROUND-SHADOWW
+.img-background-shadow{
+  box-shadow: 0 0 5px black;
+}

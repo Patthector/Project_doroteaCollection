@@ -1,0 +1,33 @@
+
+.footer-piece{
+  @include fonty(11px, $default-ff, black, $regular, 0, uppercase);
+  span{
+    @include fonty(10px, $default-ff, $color-text-weak, $regular, 0, none, italic);
+  }
+  @media(min-width:map-get($breakpoints,small)){
+    font-size:12px;
+    span{
+      font-size:13px;
+    }
+  }
+  @media(min-width:map-get($breakpoints,md)){
+    color:white;
+    span{
+      color:white;
+    }
+  }
+  @media(min-width:map-get($breakpoints,xlarge)){
+    font-size:13.5px;
+    letter-spacing: .5px;
+    span{
+      font-size:12px;
+    }
+  }
+  @media(min-width:1875px){
+    font-size:13.5px;
+    letter-spacing: .5px;
+    span{
+      font-size:12px;
+    }
+  }
+}

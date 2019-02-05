@@ -1,0 +1,10 @@
+
+.nature{
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  padding-bottom: 150px;// this padding is added just in small phones' screen beecause of the paragraph
+  @media(min-width: map-get($breakpoints,small)){//which has position absolute in 480px and less
+    padding: 0;
+  }
+}

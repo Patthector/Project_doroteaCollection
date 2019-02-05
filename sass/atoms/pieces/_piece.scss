@@ -1,0 +1,17 @@
+
+.piece{
+  width:100%;
+  align-items: center;
+  padding:2vw 2vw 0;
+
+  @media(min-width:320px){
+    width:50%;
+  }
+  @media(min-width:map-get($breakpoints,md)){
+    width:33%;
+  }
+  @media(min-width:map-get($breakpoints,xlarge)){
+    width:25%;
+    padding:36px 24px 0;
+  }
+}

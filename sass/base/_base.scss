@@ -1,0 +1,62 @@
+@viewport { width: device-width; }
+
+html {
+  background-color: $color-background;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+* {
+  &:before,
+  &:after { box-sizing: inherit; }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  color: $color-text-weak;
+  font-family: $font-family-default;
+  min-height: 100%;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+a {
+  background: transparent;
+  color: $color-link;
+  text-decoration: none;
+  transition: color .2s;
+}
+
+.img {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-display;
+  font-weight: normal;
+}
+/*
+section,div{
+  margin: 0;
+  padding: 0;
+}
+
+.row,.container-fluid{
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+p{
+  margin-bottom: 0;
+}*/

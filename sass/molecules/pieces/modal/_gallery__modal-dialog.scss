@@ -1,0 +1,10 @@
+.gallery__modal-dialog{//how big would be the modal---> **350px***400px****700px
+  max-width: 350px;
+  margin: auto;
+  @media(min-width: map-get($breakpoints,small)){
+    max-width:400px;
+  }
+  @media(min-width: map-get($breakpoints,mmd)){
+    max-width:700px;
+  }
+}

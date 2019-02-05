@@ -1,0 +1,15 @@
+
+.listing-pieces{
+  width: 100%;
+  margin-bottom: 0;
+  @media(min-width: map-get($breakpoints,mmd)){
+    width: 80%;
+    margin-bottom: 0;
+  }
+  @media(min-width: map-get($breakpoints,md)){
+    width: 33%;
+    order:2;
+    margin-bottom: 24px;
+    z-index:1; 
+  }
+}

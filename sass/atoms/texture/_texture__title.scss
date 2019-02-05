@@ -1,0 +1,126 @@
+
+.texture__title{
+  @include fonty(6vw, $default-ff, $color-text, $regular, 0, none, normal, 8vw){
+    text-align: center;
+    word-spacing: -2vw;
+    margin-bottom: 12px;
+  };
+  .first{
+    font-weight: $black;
+    font-size:14vw;
+    letter-spacing: -.5vw;
+  }
+  .middle{
+    text-transform: uppercase;
+    font-size: 11vw;
+    letter-spacing: -.7vw;
+  }
+  .last{
+    @include fonty(16vw, $cursive-ff, $color-primary, $regular, 0, capitalize);
+  }
+}
+
+@media(min-width:map-get($breakpoints,small)){
+  .texture__title{
+    line-height: 6vw;
+    word-spacing: -1vw;
+    .first{
+      font-size:11vw;
+      letter-spacing: -.5vw;
+    }
+    .middle{
+      font-size: 8vw;
+      letter-spacing: -.7vw;
+    }
+    .last{
+      font-size:12vw;
+    }
+  }
+}
+//TABLETS AND BIG PHONES
+@media(min-width:map-get($breakpoints,mmd)){
+  .texture__title{
+    line-height: 6vw;
+    word-spacing: -1vw;
+    .first{
+      font-size:11vw;
+      letter-spacing: -.5vw;
+    }
+    .middle{
+      font-size: 8vw;
+      letter-spacing: -.7vw;
+    }
+    .last{
+      font-size:12vw;
+    }
+  }
+}
+//LAPTOPS AND BIG TABLETS
+@media(min-width:map-get($breakpoints,md)){
+  .texture__title{
+    line-height: 5vw;
+    word-spacing: -1vw;
+    .first{
+      font-size:9vw;
+      letter-spacing: -.5vw;
+    }
+    .middle{
+      font-size: 6vw;
+      letter-spacing: -.7vw;
+    }
+    .last{
+      font-size:9vw;
+    }
+  }
+}
+//DESKTOPS
+@media(min-width:map-get($breakpoints,large)){
+  .texture__title{
+    line-height: 55px;
+    word-spacing: -30px;
+    .first{
+      font-size: 132px;
+      letter-spacing: -.5vw;
+    }
+    .middle{
+      font-size: 72px;
+    }
+    .last{
+      font-size:132px;
+    }
+  }
+}
+//BIG DESKTOPS
+@media(min-width:map-get($breakpoints,xlarge)){
+  .texture__title{
+    line-height: 55px;
+    word-spacing: -30px;
+    .first{
+      font-size: 132px;
+      letter-spacing: -.5vw;
+    }
+    .middle{
+      font-size: 72px;
+    }
+    .last{
+      font-size:132px;
+    }
+  }
+}
+//STATIC LAYOUT
+@media(min-width: 1875px){//static layout
+  .texture__title{
+    line-height: 55px;
+    word-spacing: -30px;
+    .first{
+      font-size: 132px;
+      letter-spacing: -.5vw;
+    }
+    .middle{
+      font-size: 72px;
+    }
+    .last{
+      font-size:132px;
+    }
+  }
+}

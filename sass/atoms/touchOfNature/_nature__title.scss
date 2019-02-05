@@ -1,0 +1,68 @@
+
+.nature__title{
+  @include fonty(12vw, $default-ff, white, $regular, 0, none, italic, 10vw);
+  text-align: center;
+  margin-bottom: 0;
+  .middle{
+    @include fonty(12vw, $default-ff, $color-primary, $regular);
+  }
+  .last{
+    @include fonty(12vw, $default-ff, white, $bold, 0, uppercase);
+  }
+  @media(min-width: map-get($breakpoints,mmd)){
+    font-size: 12vw;
+    .middle{
+      font-size: 12vw;
+    }
+    .last{
+      font-size: 12vw;
+    }
+  }
+  @media(min-width: map-get($breakpoints,md)){
+    font-size: 10vw;
+    line-height: 8vw;
+    .middle{
+      font-size: 10vw;
+    }
+    .last{
+      font-size: 10vw;
+    }
+  }
+  @media(min-width: map-get($breakpoints,large)){//1248
+
+    font-size: 96px;
+    line-height: 84px;
+    .middle{
+      font-size: 96px;
+    }
+    .last{
+      font-size:120px;
+    }
+  }
+  @media(min-width: map-get($breakpoints,xlarge)){//1500
+
+    font-size: 108px;
+    line-height: 100px;
+
+    .middle{
+      font-size: 108px;
+    }
+    .last{
+      font-size: 132px;
+      letter-spacing: -3px;
+    }
+  }
+  @media(min-width: 1875px){//static layout
+    font-size: 120px;
+    line-height: 100px;
+
+    .middle{
+      font-size: 120px;
+    }
+    .last{
+      font-size: 132px;
+      letter-spacing: -3px;
+      font-weight: 700;
+    }
+  }
+}

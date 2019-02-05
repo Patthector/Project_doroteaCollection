@@ -1,0 +1,84 @@
+
+.dorotea__content{
+  //MOBILE less than 480px
+    @include dorotea__content(
+            11px,
+            .3px,
+            17px,
+            $cursive-ff,
+            36px,
+            -1px);
+
+//TABLET SCREEN or BIG MOBILES
+  @media(min-width:map-get($breakpoints,small)){
+    @include dorotea__content(
+            12px,
+            .5px,
+            20px,
+            $cursive-ff,
+            48px,
+            -1px);
+  }
+//LAPTOPS or BIG TABLET
+  @media(min-width:map-get($breakpoints,mmd)){
+    @include dorotea__content(
+            2vw,
+            .1vw,
+            3.8vw,
+            $cursive-ff,
+            9vw,
+            -.5vw);
+  }
+//BIG LAPTOPS
+  @media(min-width:map-get($breakpoints,md)){
+    @include dorotea__content(
+            16px,
+            1.1px,
+            32px,
+            $cursive-ff,
+            8vw,
+            -.5vw);
+  }
+//DESKTOPS
+  @media(min-width:map-get($breakpoints,large)){
+    @include dorotea__content(
+            16px,
+            1px,
+            32px,
+            $cursive-ff,
+            84px,
+            -5px);
+    &.dorotea__content--hand{
+      margin-top: 132px;
+    }
+  }
+  //BIG DESKTOPS
+    @media(min-width:map-get($breakpoints,xlarge)){
+      @include dorotea__content(
+              18px,
+              1px,
+              36px,
+              $cursive-ff,
+              96px,
+              -5px);
+    }
+    @media(min-width: 1875px){//static layout
+      @include dorotea__content(
+              20px,
+              1px,
+              44px,
+              $cursive-ff,
+              108px,
+              -5px);
+    }
+}
+
+  //this is a test for paragraph inside the grid.
+.grid-p{
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 12px;
+  padding-right: 12px;
+}

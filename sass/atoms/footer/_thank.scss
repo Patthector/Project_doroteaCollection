@@ -1,0 +1,27 @@
+
+.thank{
+  font-size:9px;
+  width: 80%;
+  font-style: normal;
+  text-transform: uppercase;
+  a{
+    color:$color-text-weak;
+    font-style: italic;
+    text-transform: none;
+  }
+  @media(min-width:map-get($breakpoints,mmd)){
+    font-size:11px;
+  }
+  @media(min-width:map-get($breakpoints,md)){
+    color:$color-primary;
+    a{
+      color:white;
+    }
+  }
+  @media(min-width:map-get($breakpoints,md)){
+    color:$color-primary;
+    a{
+      color:white;
+    }
+  }
+}

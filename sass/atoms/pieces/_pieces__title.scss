@@ -1,0 +1,90 @@
+
+.pieces__title{
+  @include fonty(12vw, $default-ff, $color-text, $black, 0, uppercase, normal, 8.5vw){
+    text-align: center;
+  };
+  .first{
+    @include fonty(16vw, $cursive-ff, $color-text, $regular, 0, none);
+  }
+  .last{
+    @include fonty(13vw, $cursive-ff, $color-primary, $regular, 0, none);
+  }
+  @media(min-width: map-get($breakpoints,small)){
+    font-size:9vw;
+    line-height: 7vw;
+    .first{
+      font-size:13vw;
+    }
+    .last{
+      font-size:11vw;
+    }
+  }
+  //TABLETS AND BIG PHONES
+  @media(min-width:map-get($breakpoints,mmd)){
+    .texture__title{
+      line-height: 6vw;
+      word-spacing: -1vw;
+      .first{
+        font-size:11vw;
+        letter-spacing: -.5vw;
+      }
+      .middle{
+        font-size: 8vw;
+        letter-spacing: -.7vw;
+      }
+      .last{
+        font-size:12vw;
+      }
+    }
+  }
+  //LAPTOPS AND BIG TABLETS
+  @media(min-width:map-get($breakpoints,md)){
+    font-size: 7vw;
+    line-height: 5vw;
+    .first{
+      display: block;
+      font-size:7vw;
+    }
+    .last{
+      display: block;
+      font-size:9vw;
+    }
+  }
+  //DESKTOPS
+  @media(min-width:map-get($breakpoints,large)){
+    line-height: 60px;
+    font-size: 84px;
+    .first{
+      font-size: 84px;
+      letter-spacing: 0;
+    }
+    .last{
+      font-size:84px;
+    }
+  }
+  //BIG DESKTOPS
+  @media(min-width:map-get($breakpoints,xlarge)){
+    line-height: 60px;
+    font-size: 84px;
+    .first{
+      font-size: 84px;
+      letter-spacing: 0;
+    }
+    .last{
+      font-size:84px;
+    }
+  }
+  //STATIC LAYOUT
+  @media(min-width: 1875px){//static layout
+    line-height: 64px;
+    font-size: 96px;
+    .first{
+      font-size: 108px;
+      letter-spacing: 0;
+    }
+    .last{
+      font-size:96px;
+    }
+  }
+
+}

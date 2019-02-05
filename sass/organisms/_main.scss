@@ -1,0 +1,18 @@
+//COMPASS [ line 11, ]
+body{
+  background: #fff9f98c;
+}
+.main{
+  max-width: 1500px;
+  background: white;
+  @media(min-width: map-get($breakpoints,large)){
+    margin: auto;
+    width: 90%;
+    @include single-box-shadow(0, 0px, 5px, 0px, #ffe9e4);
+  }
+  @media(min-width: map-get($breakpoints,xlarge)){
+    margin: auto;
+    width: 80%;
+    box-shadow: 0 0px 5px 0px #ffe9e4;
+  }
+}
